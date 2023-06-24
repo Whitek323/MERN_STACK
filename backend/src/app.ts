@@ -6,7 +6,7 @@ const app = express();
 
 app.get("/",async (req,res)=>{
     try{
-        throw Error("Bazinga!")
+        throw Error("Bazinga")
         const notes = await NoteModel.find().exec(); 
         res.status(200).json(notes);
     } catch (error){
